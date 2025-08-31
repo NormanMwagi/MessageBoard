@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <% messages.forEach((message, i)=> { %>
+        <h1>
+            <%= message.user %> says:
+        </h1>
+        <p>
+            <%= message.text %>
+        </p>
+        <small>Posted on <%= message.added.toLocaleString() %></small>
+        <button onclick="location.href='/message/<%= i %>'">View</button>
+        <hr>
+        <% }); %>
+</body>
+
+</html>

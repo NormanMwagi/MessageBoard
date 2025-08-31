@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Message Details</title>
+    </head>
+
+    <body>
+        <h1>Message Details</h1>
+
+        <p><strong>Message:</strong>
+            <%= message.text %>
+        </p>
+        <p><strong>Author:</strong>
+            <%= message.user %>
+        </p>
+        <p><strong>Posted on:</strong>
+            <%= message.added.toLocaleString() %>
+        </p>
+
+        <a href="/">← Back to all messages</a>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
